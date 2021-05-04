@@ -1,0 +1,12 @@
+<h3>View</h3>
+
+<a href="{% url 'home' %}">Back to main page</a>
+<p></p>
+{% for v in view %}
+    <div>
+        <p>{{ v.title }}</p>
+        <p>{{ v.page_number }}</p>
+        <p>{{ v.page }}</p>
+        <p></p>
+    </div>
+{% endfor %}
